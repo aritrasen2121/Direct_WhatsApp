@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>WhatsApp Direct </title>
+    <style>
+        *{
+           text-align: center;
+           margin-top: 2rem;
+           background-color: rgb(49, 85, 85);
+
+        }
+        #inp{
+            padding: 0.5rem;
+            margin-top: 80px;
+            border: 2px solid rgb(62, 104, 104);
+            border-radius: 5px;
+            
+
+        }
+        button{
+            
+            color: rgb(115, 184, 184);
+        }
+        p{
+            color: rgb(97, 158, 158);
+        }
+    </style>
+</head>
+<body>
+    
+    <input id="inp" type="number" placeholder="enter wp num">
+    <br>
+    <button onclick="jump()" >JUMP</button>
+    <br><br> <br>
+      
+    <p>simply write WhatsApp number and jump into App<br> without saving the number</p>
+
+
+ 
+</body>
+<script>
+ 
+ 
+function jump()
+{
+    let x=document.getElementById("inp").value;
+    let y="https://api.whatsapp.com/send?phone=+91".concat(x);
+    document.location.href=y;
+   
+}
+ 
+</script>
+</html>
