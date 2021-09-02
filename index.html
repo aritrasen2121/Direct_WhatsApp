@@ -1,57 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>WhatsApp Direct </title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.jpeg" />
     <style>
-        *{
-           text-align: center;
-           margin-top: 2rem;
-           background-color: rgb(49, 85, 85);
+        * {
+            text-align: center;
+            background-color: rgb(49, 85, 85);
 
         }
-        #inp{
-            padding: 1.2rem;
-            margin-top: 80px;
+
+        .row{
+            margin-top: 3rem;
+        }
+        .row-cont {            
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        #input {
+            padding: 0.5rem;
             border: 2px solid rgb(62, 104, 104);
             border-radius: 5px;
-            
-
+            font-size: 20px;
+            color: white;           
         }
-        button{
-            
+
+        #btn {
+            margin-bottom: 2rem;
+            margin-top: 2rem;
             color: rgb(115, 184, 184);
         }
-        p{
+
+        #text {
             color: rgb(97, 158, 158);
+            padding: 2rem;
+        }
+
+        .container {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
-    
-    <input id="inp" type="number" placeholder="enter wp num">
-    <br>
-    <button onclick="jump()" >JUMP</button>
-    <br><br> <br>
-      
-    <p>simply write WhatsApp number and jump into App<br> without saving the number</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-12 m-auto">
+
+                <div id="main">
+                    <div class="row">
+                        <div class="row-cont">
+                            <select id="selector" style="color: white;">
+                                <option value="91">+91</option>
+                                <option value="1">+1</option>
+                                <option value="880">+880</option>
+                                <option value="229">+229</option>
+                                <option value="1">+1</option>
+                                <option value="45">+45</option>
+                                <option value="62">+62</option>
+                                <option value="98">+98</option>
+                                <option value="43">+43</option>
+                                <option value="32">+32</option>
+                                <option value="55">+55</option>
+                                <option value="86">+86</option>
+                                <option value="20">+20</option>
+                                <option value="500">+500</option>
+                                <option value="33">+33</option>
+                                <option value="1-808">+1-808</option>
+                                <option value="354">+354</option>
+                                <option value="998">+998</option>
+                                <option value="33">+33</option>
+                                <option value="1-808">+1-808</option>
+                                <option value="354">+354</option>                               
+
+                            </select>
+                            <input id="input" type="number" placeholder="enter wp num">
+                        </div>
+
+                    </div>
+                    <div>
+                        <button id="btn" onclick="jump()">JUMP</button>
+                    </div>
+
+                    <div id="text">
+                        simply write WhatsApp number and jump into App without saving the number
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
- 
+
+    <!-- Footer -->
+    <footer id="foot-id" class="page-footer font-large pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/aritrasen2121" class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/aritrasen2121/" class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-instagram"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://api.whatsapp.com/send?phone=+917719262121" class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-whatsapp-square"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://github.com/aritrasen2121" class="btn-floating btn-dribbble mx-1">
+                        <i class="fab fa-github-square"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/aritra-sen-409676206/" class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+
+
+
+    </footer>
+    <!-- Footer -->
+
+
+
 </body>
 <script>
- 
- 
-function jump()
-{
-    let x=document.getElementById("inp").value;
-    let y="https://api.whatsapp.com/send?phone=+91".concat(x);
-    document.location.href=y;
-   
-}
- 
+
+
+    function jump() {
+        let x = document.getElementById("input").value;
+        let y = document.getElementById("selector").value;        
+        let z = "https://api.whatsapp.com/send?phone=+".concat(y).concat(x);
+        document.location.href = z;
+
+    }
+
 </script>
+
 </html>
